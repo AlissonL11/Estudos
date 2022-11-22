@@ -1,0 +1,139 @@
+    #logo {
+        width: 329px;
+        height: 57px;
+        
+    }
+    body{
+        margin-left:95px;
+        margin-top: 55px;
+        margin-bottom: 100;
+    }
+
+    body .entrar{
+        font-size: 54px;        
+        line-height: 62.09px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column; 
+        margin-top: 30px;
+            
+    }
+        label{
+            font-family: 'Times New Roman';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        body h1{
+            font-weight: 400;
+            font-size: 29px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+            margin: 20px 0px 40px 0px;
+        }
+
+        body div h2  {
+            font-family: 'Times New Roman';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+        }
+            body label{
+            font-family: 'Times New Roman';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+            }
+            div input{
+                width: 566px;
+                height: 53px;
+                left: 94px;
+                top: 515px;
+
+                background: #FFFFFF;
+                border: 2px solid #000000;
+            }
+            div button{
+                box-sizing: border-box;
+
+                width: 404.5px;
+                height: 55px;
+                left: 94px;
+                top: 824px;
+
+                background: #EFEFEF;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                
+            }
+            .btenter{
+                width: 214px;
+                height: 55px;
+                background: #EFEFEF;
+                border: 1px solid #000000;
+                border-radius: 5px;
+
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 33px;
+                line-height: 38px;
+                align-items: center;
+                text-align: center;
+
+                color: #000000; 
+                margin-top: 10px;
+                margin-bottom: 42px; 
+                
+                cursor: pointer;
+            }
+
+            .provider{
+                width: 404.5px;
+                height: 55px;
+                background: #EFEFEF;
+                border: 1px solid #000000;
+                border-radius: 5px;
+
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 33px;
+                line-height: 38px;
+                
+                align-items: center;
+                text-align: center;
+
+                color: #000000;
+                margin-top: 42px;
+                cursor: pointer;
+            }
+
+            input::placeholder{
+                color: rgba(57, 57, 57, 0.5);
+                text-align: center;
+            }
+
+
+   
