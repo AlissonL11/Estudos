@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Medicamentos</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="menu-top">
+        <div id="menu">  
+            <a href="">Home</a>
+            <a href="">Cadastro de <br> Medicamentos</a>
+            <a href="">Cadastro de <br> Vacinas</a>
+            <a href="">Cadastro de <br>Cosmétiocos</a>
+        </div>
+        
+    </nav>
+    <header>
+        <img src="./medicamentos.png" alt="logotipo medicamentos">
+        <div>
+            <h1>Cadastro de Medicamentos</h1>
+            <h2>Farmácia da Gente</h2>
+        </div>   
+        
+    </header>
+    <section id="secForm">
+        <div id="form">
+            <form onsubmit="addMedicamento()">
+                <label for="mName">Nome do Medicamento*</label>
+                <input type="text" autocomplete="off" required id="mName" name="mName" placeholder="Nome do Medicamento">
+
+                <label for="mQte">Quantidade Disponível*</label>
+                <input type="text" autocomplete="off" required id="mQte" name="mQte" placeholder="Quantidade">
+
+                <label for="mClass">Classe do Medicamento*</label>
+                <input type="text" autocomplete="off" required id="mClass" name="mClass" placeholder="Classe">
+
+                <button type="submit" class="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div>
+            <table id="tbMedicamentos">
+                
+            </table>
+        </div>
+    </section>
+    
+</body>
+<script src="index.js"></script>
+</html>
