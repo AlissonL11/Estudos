@@ -65,15 +65,23 @@ header {
     margin-left: 2.5rem;      
 }
 #countdown {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;    
     font-size: 2.5rem;
     color:#514988;
-    margin-left: 2rem;
+    margin-left: 2.65rem;
 }
+    #hours{
+        margin-left: 5.8rem;
+    }
+    #minutes {
+        margin-left: 5.8rem;
+    }
+    #secs {
+        margin-left: 5.8rem;
+    }
 
 #video{
-    width: 96%;
+    width: 97%;
     padding: 1.25rem;   
 }
 
