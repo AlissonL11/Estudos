@@ -68,11 +68,10 @@ header {
     display: grid;
     grid-auto-flow: column;
     font-size: 2.5rem;
-    max-width: 100%;
     color:#514988;
-    margin-left: 2.5rem; 
-    align-items: left;
+    margin-left: 2rem;
 }
+
 #video{
     width: 96%;
     padding: 1.25rem;   
