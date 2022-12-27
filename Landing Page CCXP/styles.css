@@ -62,26 +62,27 @@ header {
     color: #E33881;
     font-weight: 700;
     font-size: 2rem;
-    margin-left: 2.5rem;      
+    margin-left: 2.8rem;     
 }
 #countdown {
     display: flex;    
-    font-size: 2.5rem;
+    font-size: 3.25rem;
     color:#514988;
     margin-left: 2.65rem;
+    margin-top: 1.5rem;
 }
     #hours{
-        margin-left: 5.8rem;
+        margin-left: 2.7rem;
     }
     #minutes {
-        margin-left: 5.8rem;
+        margin-left: 2.7rem;
     }
     #secs {
-        margin-left: 5.8rem;
+        margin-left: 2.7rem;
     }
 
 #video{
-    width: 97%;
+    width: 96%;
     padding: 1.25rem;   
 }
 
