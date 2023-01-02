@@ -131,4 +131,8 @@ header {
         background-color: #F3C61F;
     }
 
+.card-highlight {
+    box-shadow: 10px 10px grey;
+}
+
 
