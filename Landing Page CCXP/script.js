@@ -3,7 +3,7 @@ const hora = document.getElementById('hours')
 const minuto = document.getElementById('minutes')
 const segundo = document.getElementById('secs')
 
-const data = "29 dec 2022" //data final da contagem regressiva
+const data = "29 dec 2024" //data final da contagem regressiva
 
 function countDown() {
     const dataFinal = new Date(data) // transforma a data final em uma constante.
