@@ -48,13 +48,19 @@
     <p id="footer">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
     <section id="tickets">
         <div class="img">
-            <img src="./imgs/quinta.png" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="Quinta-feira">
-            <img src="./imgs/sexta.png" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="Sexta-Feira">
-            <img src="./imgs/sabado.png" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="Sábado">
-            <img src="./imgs/domingo.png" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id= "domingo" alt="Domingo"> 
+            <img src="./imgs/quinta.png" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="Quinta-feira">
+            <img src="./imgs/sexta.png" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="Sexta-Feira">
+            <img src="./imgs/sabado.png" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="Sábado">
+            <img src="./imgs/domingo.png" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id= "domingo" alt="Domingo"> 
         </div>
-        <button>GARANTA O SEU!</button>
+        <button onclick="showSelectedCards()">GARANTA O SEU!</button>
     </section>
+    <div id="form">
+        <form action="https://www.google.com/">
+            <input type="email" placeholder="Seu E-mail" required>
+            <input id="send" type="submit">
+        </form>
+    </div>
 
     <script src="script.js"></script>
     
