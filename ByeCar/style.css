@@ -186,7 +186,7 @@ transition: 0.2s  ease-in-out;
   width: 80%; /* Largura do modal */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.modal button {
+.modal button {         /* botao modal */
   cursor: pointer;
   padding: 1rem 2rem;
   font-size: 39px;

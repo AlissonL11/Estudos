@@ -1,4 +1,4 @@
-// Define o índice do item atual
+// Define o índice do item 
 let currentIndex = 0;
 
 let timer; //variável para o temporizador
@@ -47,7 +47,7 @@ function continuar(){      //continua o giro automático do carrossel
 
 
 
-// modais ABAIXO !!!
+// modais ABAIXO !
 
 function exibir() {
 
