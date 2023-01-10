@@ -163,6 +163,7 @@ transition: 0.2s  ease-in-out;
   width: 50%; 
   height: 50%; 
   padding: 20px;
+
 }
 
 #modal-2 {
@@ -185,4 +186,23 @@ transition: 0.2s  ease-in-out;
   width: 80%; /* Largura do modal */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.modal button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 39px;
+  font-weight: 700;
+  background-color: var(--button-learn-more-background);
+  color: var(--button-learn-more-color);
+  border: none;
+  border-radius: 15px;
+
+  position: absolute;
+  left: 40%;
+  top: 140%;
+
+  transition: 0.2s  ease-in-out;
+}
+  .modal button:hover{
+    background-color: #265e70;
+  }
 
