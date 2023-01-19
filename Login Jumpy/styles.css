@@ -87,7 +87,7 @@ form span{
     text-align: left;
     margin-top: 0px;
     margin-bottom: 2vh;
-    
+ 
 }
 
 #cadastrar {
@@ -99,6 +99,7 @@ form span{
     background: #0C70F2;
     border-radius: 6px;
     text-align: center;
+    border: none;
     
     
 
