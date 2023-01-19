@@ -4,8 +4,7 @@
 }
 
 body {
-    background: #2D2D2D;
-    
+    background: #2D2D2D;    
 }
 
 form{
@@ -75,21 +74,32 @@ form span{
 }
 
 #sucess {
-    position: absolute;
-    color: green;
+    width: 50px;
+    height: 14px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #05f805;
     text-align: left;
-    display: none;
-    top: 95vh;
+    margin-top: 0px;
+    margin-bottom: 2vh;
+    
 }
 
 #cadastrar {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     margin-top: 3vh;
     width: 100%;
     height: 5vh;
     cursor: pointer;
     background: #0C70F2;
     border-radius: 6px;
+    text-align: center;
+    
+    
 
     font-family: 'Raleway';
     font-style: normal;
