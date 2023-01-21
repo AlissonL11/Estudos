@@ -15,7 +15,7 @@ const phone = document.getElementById("phone");             //
 const cpf = document.getElementById("CPF");                 //
 const senha = document.getElementById("password");          //pegando os inputs pelo id
 
-
+const erroMsg = "*Campo Obrigatório*"               //mensagem de erro a ser exibida
 
 form.addEventListener('submit', function(event){        //adicionando um "escutador" ao botao submit
     event.preventDefault();         //evitando que a pagina se atualize.
@@ -24,30 +24,35 @@ form.addEventListener('submit', function(event){        //adicionando um "escuta
     //inicio da condicional (se o input estiver vazio, que apareça a mensagem de erro; do contrário, esconda a mensagem de erro)
     if(nome.value===''){
         erroNome.style.visibility = 'visible'
+        erroNome.textContent = erroMsg
     }else{
         erroNome.style.visibility = 'hidden'
     };
 
     if(email.value===''){
         erroEmail.style.visibility = 'visible'
+        erroEmail.textContent = erroMsg
     }else{
         erroEmail.style.visibility = 'hidden'
     };
 
     if(phone.value===''){
         erroPhone.style.visibility = 'visible'
+        erroPhone.textContent = erroMsg
     }else{
         erroPhone.style.visibility = 'hidden'
     };
 
     if(cpf.value===''){
         erroCPF.style.visibility = 'visible'
+        erroCPF.textContent = erroMsg
     }else{
         erroCPF.style.visibility = 'hidden'
     };
 
     if(senha.value===''){
         erroPassword.style.visibility = 'visible'
+        erroPassword.textContent = erroMsg
     }else{
         erroPassword.style.visibility = 'hidden'
     }; 
