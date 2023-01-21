@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-background: #303030;
+  --header-color: #ffffff;
+  --section-background: #ffffff;
+  --section-headings: #265e70;
+  --section-heading-motos: #4dbce9;
+  --carousel-card-color: #ffffff;
+  --carousel-card-background: #4dbce9bf;
+  --carousel-card-price: #265e70;
+  --button-learn-more-background: #4dbce9;
+  --button-learn-more-color: #ffffff;
+}
+
+header {
+  padding: 1rem;
+  background-color: var(--header-background);
+  color: var(--header-color);
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+section {
+  display: flex;
+  column-gap: 2rem;
+  padding: 3rem;
+  justify-content: space-around;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-content,
+.right-content {
+  text-align: center;
+}
+
+.left-content > h2,
+.right-content > h2 {
+  color: var(--section-headings);
+  margin-bottom: 2rem;
+  max-width: 614px;
+  font-weight: 400;
+}
+
+.right-content h2 span {
+  color: var(--section-heading-motos);
+  font-weight: 700;
+}
+
+.carousel {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.carousel button {
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-cards {
+  display: flex;
+  max-width: 540px;
+  min-height: 540px;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+.carousel-cards li {
+  background-color: var(--carousel-card-background);
+  border-radius: 15px;
+  color: var(--carousel-card-color);
+  text-align: center;
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.carousel-cards li > h2 {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.carousel-cards li .card-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.carousel-cards li .card-label > h1 {
+  font-size: 31px;
+  font-weight: 400;
+}
+
+.carousel-cards li .card-label > h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.carousel-cards li .card-label > span {
+  background-color: var(--carousel-card-color);
+  color: var(--carousel-card-price);
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 27px;
+  padding: 0.5rem 2rem;
+}
+
+.learn-more {
+  padding: 1rem 2rem;
+  font-size: 39px;
+  font-weight: 700;
+  background-color: var(--button-learn-more-background);
+  color: var(--button-learn-more-color);
+  border: none;
+  border-radius: 15px;
+}
+
+/* abaixo, estilização própria */
+
+button {
+  cursor: pointer;
+}
+
+#learn-more {
+transition: 0.2s  ease-in-out;
+}
+  #learn-more:hover{
+    background-color: #265e70;
+  }
+
+
+/* modall */
+
+#modal-1 {
+  display: none; /* Oculta o modal por padrão */
+  position: absolute; /* Fixa o modal na tela */
+  z-index: 1; /* Coloca o modal na frente de outros elementos */
+  left: 20%;
+  top: 15%;
+  width: 50%; 
+  height: 50%; 
+  padding: 20px;
+
+}
+
+#modal-2 {
+  display: none; /* Oculta o modal por padrão */
+  position: absolute; /* Fixa o modal na tela */
+  z-index: 1; /* Coloca o modal na frente de outros elementos */
+  left: 20%;
+  top: 15%;
+  width: 50%; 
+  height: 50%; 
+  padding: 20px;
+}
+
+.modal p {
+  background-color: var(--button-learn-more-background);
+  font-size: 50px;
+  color: var(--button-learn-more-color);
+  margin: 15% auto; /* Centraliza o modal na tela */
+  padding: 30px;
+  width: 80%; /* Largura do modal */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal button {         /* botao modal */
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 39px;
+  font-weight: 700;
+  background-color: var(--button-learn-more-background);
+  color: var(--button-learn-more-color);
+  border: none;
+  border-radius: 15px;
+
+  position: absolute;
+  left: 40%;
+  top: 140%;
+
+  transition: 0.2s  ease-in-out;
+}
+  .modal button:hover{
+    background-color: #265e70;
+  }
+
