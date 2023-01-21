@@ -23,47 +23,53 @@ form.addEventListener('submit', function(event){        //adicionando um "escuta
 
     //inicio da condicional (se o input estiver vazio, que apareça a mensagem de erro; do contrário, esconda a mensagem de erro)
     if(nome.value===''){
-        erroNome.style.display = 'block'
+        erroNome.style.visibility = 'visible'
     }else{
-        erroNome.style.display = 'none'
+        erroNome.style.visibility = 'hidden'
     };
 
     if(email.value===''){
-        erroEmail.style.display = 'block'
+        erroEmail.style.visibility = 'visible'
     }else{
-        erroEmail.style.display = 'none'
+        erroEmail.style.visibility = 'hidden'
     };
 
     if(phone.value===''){
-        erroPhone.style.display = 'block'
+        erroPhone.style.visibility = 'visible'
     }else{
-        erroPhone.style.display = 'none'
+        erroPhone.style.visibility = 'hidden'
     };
 
     if(cpf.value===''){
-        erroCPF.style.display = 'block'
+        erroCPF.style.visibility = 'visible'
     }else{
-        erroCPF.style.display = 'none'
+        erroCPF.style.visibility = 'hidden'
     };
 
     if(senha.value===''){
-        erroPassword.style.display ='block'
+        erroPassword.style.visibility = 'visible'
     }else{
-        erroPassword.style.display ='none'
+        erroPassword.style.visibility = 'hidden'
     }; 
 
     //abaixo a condicional da mensagem de sucesso (se todos os inputs estiverem com algum valor, mostre a mensagem de sucesso e oculte os erros, do contrário, oculte a mensagem de sucesso.)
 
     if(nome.value!='' && email.value!='' && phone.value!='' && cpf.value!='' && senha.value!= ''){
-        sucess.style.display = 'block'
-        erroNome.style.display = 'none'
-        erroEmail.style.display = 'none'
-        erroPhone.style.display = 'none'
-        erroCPF.style.display = 'none'
-        erroPassword.style.display ='none'
+        sucess.textContent = "Sucesso!"             //alterando o texto exibido dentro do span de sucesso (em caso de tudo estar preenchido)
+        sucess.style.color = "#05f805"              //alterando a cor a ser exibida para o texto.
+
+        sucess.style.visibility = 'visible'
+        erroNome.style.visibility = 'hidden'
+        erroEmail.style.visibility = 'hidden'
+        erroPhone.style.visibility = 'hidden'
+        erroCPF.style.visibility = 'hidden'
+        erroPassword.style.visibility = 'hidden'
 
     }else{
-        sucess.style.display = 'none'
+        sucess.textContent= "Campos obrigatórios não registrados.";         //alterando o texto exibido dentro do span de sucesso, caso esteja algo vazio.
+        sucess.style.color = "red";                                         ////alterando a cor a ser exibida para o texto.
+        sucess.style.visibility = 'visible';
+
     };
 }
 )
